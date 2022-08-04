@@ -33,6 +33,7 @@ struct ContentView: View {
                     }
                 
                 Text("باقي على الأذان ")
+                    .padding()
                 VStack {
                 HStack{
                     Image(systemName:"chevron.left")
@@ -70,13 +71,23 @@ struct ContentView: View {
                         Text("3:21 PM")
                         Spacer()
                         Text("العصر ")
-                    }
+                    }.padding()
                     
+                    HStack{
+                        Text("6:25 PM")
+                        Spacer()
+                        Text("المغرب ")
+                    }.padding()
                     
+                    HStack{
+                        Text("7:50 PM")
+                        Spacer()
+                        Text("العشاء ")
+                    }.padding()
                        }.background(.white.opacity(0.4))
                                 
                 
-            }.padding()
+            }
             .foregroundColor(.white)
                 
                 
